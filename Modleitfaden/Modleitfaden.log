@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.4)  29 JUL 2025 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.7.4)  29 JUL 2025 19:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -290,31 +290,46 @@ Overfull \hbox (23.6778pt too wide) in paragraph at lines 73--73
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 83.
+(Font)              <12> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 83.
+(Font)              <8> on input line 84.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 83.
+(Font)              <6> on input line 84.
 
-Overfull \hbox (91.91702pt too wide) in paragraph at lines 83--96
+Overfull \hbox (91.91702pt too wide) in paragraph at lines 84--97
  [][] 
  []
 
 
-Overfull \hbox (3.05565pt too wide) in paragraph at lines 75--96
+Overfull \hbox (3.05565pt too wide) in paragraph at lines 76--97
 \OT1/cmr/m/n/12 Es ist wichtig, beim Moderieren die vergangenen [][]Modcases[][] zu ber^^?ucksichtigen.
  []
 
 
 
 [3]
-Overfull \hbox (9.72224pt too wide) in paragraph at lines 97--110
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+
+Overfull \hbox (9.72224pt too wide) in paragraph at lines 101--108
 \OT1/cmr/m/n/12 ^^?uberleben auch ohne unser Engagement, und ihr m^^?usst nicht f^^?urchten, aufgrund
  []
 
 
-Overfull \hbox (9.3528pt too wide) in paragraph at lines 97--110
+Overfull \hbox (9.3528pt too wide) in paragraph at lines 101--108
 \OT1/cmr/m/n/12 Viele User werden Transparenz fordern, aber darauf haben sie keinen Anspruch.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--108
+
+ []
+
+
+Overfull \hbox (4.45285pt too wide) in paragraph at lines 109--117
+\OT1/cmr/m/n/12 Wie erw^^?ahnt, k^^?ummern sich nur die (Head)-Mods um die [][]Appeals[][] und [][]Tickets[][].
  []
 
 
@@ -323,24 +338,26 @@ Overfull \hbox (9.3528pt too wide) in paragraph at lines 97--110
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.111 \section
-              {Moderationsmaßnahmen}]
-Overfull \hbox (9.87488pt too wide) in paragraph at lines 122--123
+l.117 \subsection
+                 {Umgang mit kontroversen Usern}]
+
+[5]
+Overfull \hbox (9.87488pt too wide) in paragraph at lines 132--133
 [][]\OT1/cmtt/m/n/12 s! [Aktion] [user] [duration (falls timeout/mute)] [reason]
  []
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 133.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 143.
 
-
-[5]
-Overfull \hbox (25.11081pt too wide) in paragraph at lines 144--145
+Overfull \hbox (25.11081pt too wide) in paragraph at lines 154--155
 []\OT1/cmtt/m/n/12 s! usernotes [user] [optional: Notiz] \OT1/cmr/m/n/12 -- Zeigt oder erg^^?anzt Notizen
  []
 
 
 
-[6] (./Modleitfaden.aux)
+[6]
+
+[7] (./Modleitfaden.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -356,12 +373,12 @@ Package rerunfilecheck Warning: File `Modleitfaden.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `Modleitfaden.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A7E62846AAAE61A82544146D67A7FE33;1606.
+(rerunfilecheck)             After:  09BA4A4F4882F4E16653DFEE9AB81793;2329.
  ) 
 Here is how much of TeX's memory you used:
- 9712 strings out of 475171
- 153257 string characters out of 5767096
- 569967 words of memory out of 5000000
+ 9717 strings out of 475171
+ 153319 string characters out of 5767096
+ 570967 words of memory out of 5000000
  32593 multiletter control sequences out of 15000+600000
  564511 words of font info for 55 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -370,10 +387,10 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): name{term:warn} has been referenced but does not exist, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Modleitfaden.pdf (6 pages, 82834 bytes).
+Output written on Modleitfaden.pdf (7 pages, 84654 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 123 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
