@@ -1,0 +1,74 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+\title{Moderationsleitfaden für Vollmarcant's Discord Server}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Einleitung}
+Dieser Leitfaden dient als Orientierung für das Verhalten und die Aufgaben von Moderatoren auf Vollmarcant's Discord Server. Ziel ist ein respektvoller, sicherer und angenehmer Umgang für alle Mitglieder.
+
+\section{Allgemeine Verhaltensregeln für Moderatoren}
+\begin{itemize}
+    \item Sei respektvoll und neutral in Konfliktsituationen.
+    \item Handle transparent, aber wahre die Privatsphäre der Mitglieder.
+    \item Setze Sanktionen verhältnismäßig und begründet ein.
+    \item Kommuniziere Entscheidungen klar im Team.
+    \item Nutze die bereitgestellten Moderationstools verantwortungsvoll.
+\end{itemize}
+
+\section{Moderationsmaßnahmen}
+\subsection{Timeouts und Bans}
+\begin{itemize}
+    \item \textbf{Anonym \& ohne angezeigten Grund:} Nutze die Standard Discord Moderationsfunktionen.
+    \item \textbf{Mit Grund oder nicht-anonym:} Verwende den Bot Sapphire im Channel \texttt{\#sapphire-commands}.
+\end{itemize}
+
+\subsection{Sapphire Bot: Moderationsbefehle}
+\begin{description}[style=nextline]
+    \item[Befehlsschema:] \texttt{s! [Aktion] [user] [duration (falls timeout/mute)] [reason] [-r]}
+    \item[Aktionen:]
+    \begin{itemize}
+        \item \texttt{warn} -- User verwarnen (wird geloggt)
+        \item \texttt{unwarn}
+        \item \texttt{mute} -- Timeout
+        \item \texttt{unmute}
+        \item \texttt{kick}
+        \item \texttt{ban}
+        \item \texttt{unban}
+    \end{itemize}
+    \item[User:] Erwähne den User (\texttt{@User}), ID oder Name.
+    \item[Dauer:] z.B. \texttt{4d} für 4 Tage (\texttt{s}, \texttt{m}, \texttt{h}, \texttt{d}, \texttt{w}, \texttt{y}).
+    \item[Reason:] Freitext, z.B. \texttt{Trollwelle/Unhöflich}.
+    \item[-r:] Ermöglicht das Reviewen und Anpassen des Grundes in einem eigenen Fenster.
+\end{description}
+
+\section{Weitere Sapphire Bot Befehle}
+\begin{itemize}
+    \item \texttt{s! list commands} -- Zeigt alle Befehle an.
+    \item \texttt{s! list features} -- Listet Features auf.
+    \item \texttt{s! userinfo [user]} -- Zeigt Infos zu einem User.
+    \item \texttt{s! usernotes [user] [optional: Notiz]} -- Zeigt oder ergänzt Notizen zu einem User.
+    \item \texttt{s! lock [channel] [reason] [+s]} -- Sperrt einen Channel (mit \texttt{+s} ohne Nachricht).
+    \item \texttt{s! unlock [channel] [reason] [+s]} -- Entsperrt einen Channel.
+    \item \texttt{s! sendmessage [channel] [message]} -- Anonyme Durchsage.
+\end{itemize}
+
+\section{Casesystem}
+\begin{itemize}
+    \item \texttt{s! caseinfo [caseid]} -- Zeigt Infos zu einem Case.
+    \item \texttt{s! caseupdate [caseid] [reason|time [reason]]} -- Aktualisiert einen Case.
+    \item \texttt{s! caselist [user] ...} -- Listet alle Cases eines Users.
+    \item \texttt{s! caseclose [caseid] [reason]} -- Schließt einen Case.
+\end{itemize}
+
+\section{Abschluss}
+Bei Unsicherheiten oder Fragen wendet euch an das Moderationsteam oder die Serverleitung.
+
+\end{document}

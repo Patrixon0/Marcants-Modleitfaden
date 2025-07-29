@@ -1,0 +1,163 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{float} % hinzugefügt für [H]
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdfstartview=FitH,
+    pdfborder={0 0 0}
+}
+
+\title{Moderationsleitfaden für Vollmarcants Discord-Server}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Fachbegriffe}
+\label{sec:fachbegriffe}
+\begin{itemize}
+    \item \textbf{Sapphire}\hypertarget{term:sapphire}{}: Der Discord-Bot, der für Moderation und Automatisierung des Servers genutzt wird.  
+    \item \textbf{DM}\hypertarget{term:dm}{}: Direct Message, Privatnachricht (In seltenen Kontexten auch Dungeon Master, aber hier wahrscheinlich irrelevant).
+    \item \textbf{TO / Mute}\hypertarget{term:to}{}: Timeout, Mute: Zeitlich begrenzte Sperre der Schreib- und Rederechte (\hyperlink{term:ban}{Ban} für permanent)
+    \item \textbf{Ban}\hypertarget{term:ban}{}: Dauerhafte Sperre (siehe auch \hyperlink{term:to}{Timeout})
+    \item \textbf{Command}\hypertarget{term:command}{}: Ein Befehl, den man im \hyperlink{term:chat}{Chat} eingibt, um eine Moderationsmaßnahme durchzuführen
+    \item \textbf{Case}\hypertarget{term:case}{}: Sapphire-System: Eine spezifische mit einem \hyperlink{term:command}{Command} durchgeführte Maßnahme. Ein User kann mehrere Cases haben.
+    \item \textbf{Ticket}\hypertarget{term:ticket}{}: User können im Channel \texttt{\#mod-tickets} ein Ticket erstellen, um mit der Moderationsebene in einem privaten Chat zu kommunizieren (\hyperlink{term:modmail}{Modmail} als Alternative). Tickets werden von Head-Mods bearbeitet.
+    \item \textbf{Modmail}\hypertarget{term:modmail}{}: ähnliches System wie bei \hyperlink{term:ticket}{Tickets}, nur dass man dazu den Bot per \hyperlink{term:dm}{DM} anschreibt.
+    \item \textbf{Appeal}\hypertarget{term:appeal}{}: Bei einem \hyperlink{term:case}{Case} wird dem betreffenden User eine Privatnachricht mit dem Grund der Maßnahme geschickt. Dort gibt es einen Link zu einer Website, auf der man für eine Aufhebung der Sperre "appellieren" kann. Appeals werden von Head-Mods bearbeitet.
+    \item \textbf{Chat}\hypertarget{term:chat}{}: Textkanal, in dem man nur schreiben kann .
+    \item \textbf{VC / Voice}\hypertarget{term:vc}{}: Voice-Channel, in dem man reden kann .
+    \item \textbf{Forum}\hypertarget{term:forum}{}: Ein Ort, an dem jeder User einen eigenen Minikanal anlegen kann, um einen bestimmten Beitrag zu teilen (siehe auch \hyperlink{term:thread}{Thread}).
+    \item \textbf{Thread}\hypertarget{term:thread}{}: Subchat eines \hyperlink{term:chat}{Chats} oder \hyperlink{term:forum}{Forums}.
+    \item \textbf{Profil}\hypertarget{term:profile}{}: Der Bereich eines Users, der Informationen über den User enthält und bei clicken auf den \hyperlink{term:username}{Nutzername} sichtbar ist.
+    \item \textbf{Nickname / Nick}\hypertarget{term:nick}{}: Der servereigene Name eines Users, der z.T. von diesem selbst festgelegt werden kann.
+    \item \textbf{Anzeigename / Display Name}\hypertarget{term:displayname}{}: Der Name, der in Discord angezeigt wird (kann vom \hyperlink{term:nick}{Nick} überschrieben werden).
+    \item \textbf{Nutzername / Username}\hypertarget{term:username}{}: Der einzigartige Discord-Benutzername, der im \hyperlink{term:profile}{Profil} lesbar ist
+    \item \textbf{Nutzer-ID / User ID / ID}\hypertarget{term:id}{}: Eine eindeutige und nicht änderbare Identifikationsnummer, die bei Erstellung des Accounts vergeben wird. Wenn man den \href{https://www.howtogeek.com/714348/how-to-enable-or-disable-developer-mode-on-discord/}{Developer-Modus} an hat: Im \hyperlink{term:profile}{Profil} des Users auf dem Knopf "..." und dann auf "ID kopieren" klicken
+    \item \textbf{TOS}\hypertarget{term:tos}{}: Terms of Service, die Nutzungsbedingungen von Discord.
+\end{itemize}
+
+\section{Einleitung}
+Dieser Leitfaden soll zur Orientierung dienen, ist aber \textbf{keine Vorschrift}. Es ist sinnvoll, wenn wir
+eine stringente Moderation haben, deswegen versuche ich hier zu vermitteln, wie ich Fälle moderieren würde.\\
+Meine Art der Moderation ist an Marcs Art der Moderation angelehnt.
+
+\section{Moderationsziele}
+Unsere Ziele sind, in Reihenfolge ihrer Wichtigkeit:
+\begin{itemize}
+    \item Eine für alle Mitglieder sichere Umgebung
+    \item Ein respektvoller und angenehmer Umgang
+    \item Ein Ort zum Austausch über Themen betreffend Marc
+    \item Konstruktive Diskussion und politischer Austausch
+    \item Unterhaltung der Servermitglieder, die "Serverflora" wachsen lassen
+\end{itemize}
+Der Server hat also nur dann ein Existenzrecht, wenn die obersten beiden Punkte erfüllt sind. Für unsere Moderationsart
+bedeutet das Folgendes:
+\begin{itemize}
+    \item Wir versuchen nicht, die problematischeren Mitglieder argumentativ zu überzeugen, sondern sorgen dafür, dass sie entweder kooperieren oder den Server verlassen.
+    \item Das heißt, wir sind in unseren Entscheidungen konsequent und reagieren lieber zu stark als zu schwach.
+    \item Wenn jemand die obersten beiden Punkte auch nur in geringem Maße gefährdet, wird er mit zunehmend stärkeren Konsequenzen konfrontiert. Dabei starten wir direkt mit hohen \hyperlink{term:to}{Timeouts}, um zu zeigen, dass wir es ernst meinen.
+    \item Oft sind Provokateure schlau und zeigen sich nicht direkt problematisch, sondern nutzen die Persönlichkeiten anderer aus, um Unruhe zu stiften. In solchen Fällen gerne nach Dingen suchen, die man "übermäßig stark" \hyperlink{term:to}{timeouten} kann. Sonst würden die Provokateure gewinnen.
+    \item Gleiches (auch wenn schwächer) gilt für jene, die nicht provozieren, aber trotzdem in einer Weise das Gesprächsklima stören.
+    \item Es kommt oft (und manchmal zurecht) vor, dass sich ein User über eine Maßnahme beschwert. In dem Fall darf der betreffende Mod das \hyperlink{term:ticket}{Ticket} nicht selbst bearbeiten!
+    \item Falls ein Ticket zu frech ist, können wir ruhig auch dafür \hyperlink{term:to}{Timeouts} bzw. eine Erhöhung der Konsequenz verteilen.
+\end{itemize}
+
+\section{Allgemeine Verhaltensregeln für Moderatoren}
+\label{sec:modregeln}
+Wir moderieren mithilfe von Bot-Befehlen mit dem Discord-Bot \hyperlink{term:sapphire}{Sapphire} (siehe Abschnitt~\hyperlink{sec:sapphire}{Moderationsmaßnahmen}).\\
+Die \hyperlink{term:command}{Befehle} sind im Channel \texttt{\#sapphire-commands} zu nutzen. Zu jedem Befehl soll eine kurze Beschreibung des Vergehens einhergehen.\\
+Es ist wichtig, beim Moderieren die vergangenen \hyperlink{term:case}{Modcases} zu berücksichtigen. Nutze dafür den entsprechenden Befehl.\\
+Wenn man Vergehen auf einer Schwereskala von 0 bis 5 den Konsequenzen 0 bis 5 zuordnet, sieht das in etwa so aus:
+\begin{table}[H]
+    \centering
+    \caption{Schweregrad und Konsequenzen}
+    \label{tab:schweregrad}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Schweregrad} & \textbf{Konsequenz} & \textbf{Beispiele} \\
+        \hline
+        0 & \hyperlink{term:warn}{Warn} / \hyperlink{term:to}{TO} unter 24h & leichtere Vergehen bzw. unnötige Handlungen\\ \hline
+        1 & 1--2 Tage \hyperlink{term:to}{TO} & Spam, Ignoranz, Schaffen von Mehraufwand \\ \hline
+        2 & 3--5 Tage \hyperlink{term:to}{TO} & leichte Beleidigung bzw. Provokation \\ \hline
+        3 & 1 Woche \hyperlink{term:to}{TO} & Frecher Umgang, Aufgeheiztheit, Entitlement \\ \hline
+        4 & 2 Wochen \hyperlink{term:to}{TO} & Beleidigung, gezielte Provokation \\ \hline
+        5 & Permanenter \hyperlink{term:ban}{Ban} & Belästigung, reine Ideologieverbreitung \\
+          &               & Mehrfachvergehen, Menschenfeindlichkeit, Trolling \\
+        \hline
+    \end{tabular}
+\end{table}
+Ich moechte an dieser Stelle nochmal betonen, dass es sich hierbei nur um eine grobe Orientierung handelt. Diese Orientierung
+gilt auch nur, solange der User nicht vorbestraft ist.\\ 
+Es ist wichtig, dass ihr den Server nicht über euer Privatleben stellt. Ihr werdet nicht bezahlt, also verhaltet euch nicht so.
+Die Leute auf dem Server überleben auch ohne unser Engagement, und ihr müsst nicht fürchten, aufgrund von Inaktivität herabgestuft zu werden.\\
+Generell sollte auch die Regel gelten, dass ihr euch beim Interagieren mit einem User nur so lange wie nötig beschäftigt und nicht länger.
+Eure Zeit ist kostbar und die User haben keinen Anspruch auf sie. Sie haben keinen Anspruch auf die fairste Lösung. Selbst wenn ihr unfair handelt, weil
+es sonst zu lange dauern würde, dann ist das halt so. Viele Personen werden dadurch zwar unzufrieden sein, aber das ist eine Sache, die man halt in Kauf nehmen muss.
+Man kann es so oder so eh nicht jedem recht machen.\\
+Viele User werden Transparenz fordern, aber darauf haben sie keinen Anspruch. Transparenz kostet uns nämlich vor allem eines: Zeit. Man sollte jedoch trotzdem bei jeder Maßnahme immer den Grund angeben.\\
+Wenn sich jemand im \hyperlink{term:chat}{Chat} oder im \hyperlink{term:vc}{Voice} falsch benimmt oder es generell zu hitzig wird, dann ist es hilfreich, eine kleine beispielhafte Moderation durchzuführen und dann die Teilnehmer anzuweisen, das Thema zu wechseln. 
+Es ist wichtig, dass die Mods ernst genommen werden, da Leute sonst frech werden. Daher ist es sehr wichtig, dass man Leute, die einen nicht ernst nehmen, dementsprechend bestraft.
+Das kann teilweise recht schwierig sein, da man sich damit nicht beliebt macht, ist aber leider notwendig.\\
+Wenn man sich bei einer Maßnahme unsicher ist, kann man sich jederzeit in \texttt{\#team} mit dem Team absprechen. Wenn man für den Geschmack einer höhergestellten Person zu schwach oder zu stark ist, dann werden wir das eventuell ansprechen, aber mehr muss man nicht befürchten.
+
+\section{Moderationsmaßnahmen}
+\label{sec:sapphire}
+\hypertarget{sec:sapphire}{}
+\subsection{Timeouts und Bans}
+\begin{itemize}
+    \item \textbf{Anonym \& ohne angezeigten Grund:} Nutze die Standard-Discord-Moderationsfunktionen.
+    \item \textbf{Mit Grund oder nicht-anonym:} Verwende den Bot \hyperlink{term:sapphire}{Sapphire} im Channel \texttt{\#sapphire-commands}.
+\end{itemize}
+
+\subsection{Sapphire: Moderationsbefehle}
+\begin{description}[style=nextline]
+    \item[Befehlsschema:] \hyperlink{term:command}{\texttt{s! [Aktion] [user] [duration (falls timeout/mute)] [reason] [-r]}}
+    \item[Aktionen:]
+    \begin{itemize}
+        \item \texttt{warn} -- User verwarnen (wird geloggt)
+        \item \texttt{unwarn}
+        \item \texttt{mute} -- \hyperlink{term:to}{Timeout}
+        \item \texttt{unmute} -- Timeout aufheben
+        \item \texttt{kick}
+        \item \texttt{ban}
+        \item \texttt{unban}
+    \end{itemize}
+    \item[\texttt{[User]:}] Erwähne den User (\texttt{@User}), ID oder Name.
+    \item[\texttt{[Dauer]:}] z.B. \texttt{4d} für 4 Tage (\texttt{s}, \texttt{m}, \texttt{h}, \texttt{d}, \texttt{w}, \texttt{y}).
+    \item[\texttt{[Reason]:}] Freitext, z.B. \texttt{Trollwelle/Unhöflich}.
+    \item[\texttt{[-r]:}] Ermöglicht das Reviewen und Anpassen des Grundes in einem eigenen Fenster.
+\end{description}
+
+\subsection{Weitere Sapphire Befehle}
+\begin{itemize}
+    \item \texttt{s! list commands} -- Zeigt alle Befehle an.
+    \item \texttt{s! list features} -- Listet Features auf.
+    \item \texttt{s! userinfo [user]} -- Zeigt Infos zu einem User.
+    \item \texttt{s! usernotes [user] [optional: Notiz]} -- Zeigt oder ergänzt Notizen zu einem User.
+    \item \texttt{s! lock [channel] [reason] [+s]} -- Sperrt einen Channel (mit \texttt{+s} ohne Nachricht).
+    \item \texttt{s! unlock [channel] [reason] [+s]} -- Entsperrt einen Channel.
+    \item \texttt{s! sendmessage [channel] [message]} -- Anonyme Durchsage.
+\end{itemize}
+
+\subsection{Casesystem}
+\label{sec:casesystem}
+\begin{itemize}
+    \item \texttt{s! caseinfo [caseid]} -- Zeigt Infos zu einem \hyperlink{term:case}{Case}.
+    \item \texttt{s! caseupdate [caseid] [reason|time [reason]]} -- Aktualisiert einen \hyperlink{term:case}{Case}.
+    \item \texttt{s! caselist [user] ...} -- Listet alle \hyperlink{term:case}{Cases} eines Users.
+    \item \texttt{s! caseclose [caseid] [reason]} -- Schließt einen \hyperlink{term:case}{Case}.
+\end{itemize}
+
+\section{Fehlverhalten unterhalb des Modteams}
+Auch wenn wir eine hohe Fehlertoleranz haben, sieht es anders aus, wenn es sich um absichtliches Fehlverhalten und Respektlosigkeit handelt.
+Wenn euch das bewusste Fehlverhalten eines Moderators auffällt, schreibt Patrick eine \hyperlink{term:dm}{DM}.
+
+\end{document}
