@@ -1,7 +1,7 @@
-PWD /home/patrixon/Documents/Discord/Modleitfaden
+PWD /home/patrixon/Documents/Discord/Marcants-Modleitfaden/Modleitfaden
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/patrixon/Documents/Discord/Modleitfaden/Modleitfaden.tex
+INPUT /home/patrixon/Documents/Discord/Marcants-Modleitfaden/Modleitfaden/Modleitfaden.tex
 OUTPUT Modleitfaden.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
